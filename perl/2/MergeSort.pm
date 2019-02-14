@@ -2,12 +2,8 @@
 
 use strict;
 use warnings;
-
-my @arr = split ' ', <DATA>;
-
-mergesort ( \@arr, 0, $#arr );
-
-print "@arr\n";
+use Exporter qw ( import );
+our @EXPORT_OK = qw ( mergesort );
 
 sub mergesort
 {
@@ -36,5 +32,4 @@ sub merge
 	@$a[ $i..$r ] = ( @L, @R );
 }
 
-__DATA__
-3 41 52 26 38 57 9 49
+1;

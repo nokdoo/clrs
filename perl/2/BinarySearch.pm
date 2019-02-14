@@ -1,13 +1,9 @@
-#!/usr/bin/env perl
+package BinarySearch;
 
 use strict;
 use warnings;
-
-my @arr = split ' ', <DATA>;
-
-print binarysearch( \@arr, 1 )."\n";
-print binarysearch( \@arr, 3 )."\n";
-print binarysearch( \@arr, 9 )."\n";
+use Exporter qw(import);
+our @EXPORT_OK = qw(binarysearch);
 
 sub binarysearch
 {
@@ -27,5 +23,4 @@ sub binarysearch
 	return -1;
 }
 
-__DATA__
-1 2 4 5 6 7 8 9 10 11
+1;
