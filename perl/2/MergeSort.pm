@@ -1,4 +1,4 @@
-#!/usr/bin/env perl
+package MergeSort;
 
 use strict;
 use warnings;

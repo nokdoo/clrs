@@ -3,6 +3,7 @@
 use strict;
 use warnings;
 use lib './';
+use Exporter;
 use BinarySearch qw ( binarysearch );
 
 my @arr = split ' ', <DATA>;
