@@ -1,0 +1,6 @@
+=encoding utf8
+=pod
+
+4.2부터 제낌...
+
+=cut
